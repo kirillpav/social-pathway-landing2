@@ -1,0 +1,56 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero__title {
+  padding-top: 250px;
+  color: white;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.hero__title > span {
+  margin-left: 25%;
+}
+
+.hero__text {
+  font-size: 50px;
+}
+
+.about {
+  display: flex;
+  position: relative;
+}
+
+.about__left {
+  width: 50%;
+  overflow: visible;
+}
+
+.about__img {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+
+  left: 60%;
+  top: 50px;
+}
+
+.about__btn {
+  margin-left: 35%;
+}
+
+.container {
+  position: relative;
+}
+
+.card {
+  padding: 40px;
+}
+
+.services__card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: box-shadow 0.3s linear;
+}
