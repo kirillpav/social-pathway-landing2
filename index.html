@@ -22,19 +22,19 @@
           /></a>
           <ul class="navbar-nav d-flex align-content-center">
             <li class="nav-item me-4">
-              <a class="nav-link" href="">About Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item me-4">
-              <a href="" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item me-4">
-              <a href="" class="nav-link">Cases</a>
+              <a href="#cases" class="nav-link">Cases</a>
             </li>
             <li class="nav-item me-4">
               <a href="" class="nav-link">Price</a>
             </li>
             <li class="nav-item me-4">
-              <a href="" class="nav-link">Contact Us</a>
+              <a href="#contact" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -60,7 +60,7 @@
         <button type="button" class="btn btn-dark btn-lg">Learn More</button>
       </div>
     </section>
-    <section class="about mt-5">
+    <section class="about mt-5" id="about">
       <div class="container">
         <div class="about__left">
           <h2>About Us</h2>
@@ -84,14 +84,14 @@
         <img class="about__img" src="./imgs/about.png" />
       </div>
     </section>
-    <section class="process mt-5">
+    <section class="process mt-5 bg-light pt-5" id="process">
       <div class="container">
         <h2>Our Process</h2>
         <ul
           class="process__list mt-5 d-flex flex-wrap justify-content-center text-end"
         >
           <li
-            class="card process__card1 m-3 w-25 border-0"
+            class="card process__card1 m-3 w-25 border-0 bg-light text-dark"
             style="
               background-image: url(./imgs/1.svg);
               background-position: left;
@@ -103,7 +103,7 @@
             Target Audience Analysis
           </li>
           <li
-            class="card process__card2 m-3 w-25 border-0"
+            class="card process__card2 m-3 w-25 border-0 bg-light text-dark"
             style="
               background-image: url(./imgs/2.svg);
               background-position: left;
@@ -117,7 +117,7 @@
             promotion strategy
           </li>
           <li
-            class="card process__card3 m-3 w-25 border-0"
+            class="card process__card3 m-3 w-25 border-0 bg-light text-dark"
             style="
               background-image: url(./imgs/3.svg);
               background-position: left;
@@ -132,7 +132,7 @@
           </li>
 
           <li
-            class="card process__card4 m-3 w-25 border-0"
+            class="card process__card4 m-3 w-25 border-0 bg-light text-dark"
             style="
               background-image: url(./imgs/4.svg);
               background-position: left;
@@ -145,7 +145,7 @@
             administration
           </li>
           <li
-            class="card process__card5 m-3 w-25 border-0"
+            class="card process__card5 m-3 w-25 border-0 bg-light text-dark"
             style="
               background-image: url(./imgs/5.svg);
               background-position: left;
@@ -158,7 +158,7 @@
             opinion leaders.
           </li>
           <li
-            class="card process__card6 m-3 w-25 border-0"
+            class="card process__card6 m-3 w-25 border-0 bg-light text-dark"
             style="
               background-image: url(./imgs/6.svg);
               background-position: left;
@@ -172,11 +172,104 @@
         </ul>
       </div>
     </section>
-    <section class="services mt-5">
+    <section class="services mt-5" id="services">
       <div class="container">
         <div class="d-flex justify-content-between">
           <h2>Our Servises</h2>
-          <button class="btn btn-dark btn-lg">Request FREE consulation</button>
+          <button
+            type="button"
+            class="btn btn-dark btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Request FREE consulation
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Free Consulation
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="name"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="First Name Last Name"
+                      />
+                      <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="example@gmail.com"
+                        name="email"
+                      />
+                      <label for="floatingInput">Email Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Company Name"
+                      />
+                      <label for="floatingInput">Company Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="phone"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="+44 678 88 77"
+                        name="phone"
+                      />
+                      <label for="floatingInput">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave your message for us"
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea">Message</label>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <button type="submit" class="btn btn-dark w-25">
+                        Send!
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <ul
           class="d-flex mt-5 justify-content-around text-center list-unstyled"
@@ -233,7 +326,7 @@
         </ul>
       </div>
     </section>
-    <section class="cases mt-5 bg-dark">
+    <section class="cases mt-5 bg-dark" id="cases">
       <div class="container p-5">
         <h2 class="text-light mb-5">Our Cases</h2>
         <div
@@ -248,17 +341,17 @@
                   class="d-flex flex-row w-50 justify-content-evenly flex-wrap"
                 >
                   <img
-                    class="w-50 h-75 rounded"
-                    src="./imgs/placeholder1.jpg"
+                    class="w-50 rounded"
+                    src="./imgs/instagram-profile.jpeg"
                     alt=""
                   />
                   <img
-                    class="w-50 h-75 rounded"
-                    src="./imgs/placeholder2.jpg"
+                    class="w-50 rounded"
+                    src="./imgs/placeholderchart.png"
                     alt=""
                   />
                 </div>
-                <div class="card bg-primary w-25">
+                <div class="card bg-light w-25">
                   <span>****</span>
                   <blockquote>
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -279,17 +372,17 @@
                   class="d-flex flex-row w-50 justify-content-evenly flex-wrap"
                 >
                   <img
-                    class="w-50 h-75 rounded"
-                    src="./imgs/placeholder1.jpg"
+                    class="w-50 rounded"
+                    src="./imgs/instagram-profile.jpeg"
                     alt=""
                   />
                   <img
-                    class="w-50 h-75 rounded"
-                    src="./imgs/placeholder2.jpg"
+                    class="w-50 rounded"
+                    src="./imgs/placeholderchart.png"
                     alt=""
                   />
                 </div>
-                <div class="card bg-primary w-25">
+                <div class="card bg-light w-25">
                   <span>****</span>
                   <blockquote>
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -311,16 +404,16 @@
                 >
                   <img
                     class="w-50 h-75 rounded"
-                    src="./imgs/placeholder1.jpg"
+                    src="./imgs/instagram-profile.jpeg"
                     alt=""
                   />
                   <img
                     class="w-50 h-75 rounded"
-                    src="./imgs/placeholder2.jpg"
+                    src="./imgs/placeholderchart.png"
                     alt=""
                   />
                 </div>
-                <div class="card bg-primary w-25">
+                <div class="card bg-light w-25">
                   <span>****</span>
                   <blockquote>
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -357,7 +450,7 @@
         </div>
       </div>
     </section>
-    <section class="mt-5">
+    <section class="mt-5" id="contact">
       <div class="container text-center">
         <h2>Let's Get Started?</h2>
         <p>Our mission is to move your business forward</p>
@@ -415,7 +508,7 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-white text-muted">
+    <footer class="text-center text-lg-start bg-light pt-5 mt-5 text-muted">
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
@@ -437,13 +530,37 @@
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Social Links</h6>
               <p>
-                <a href="#!" class="text-reset">Instagram</a>
+                <a href="#!" class="text-reset"
+                  ><img
+                    src="./node_modules/bootstrap-icons/icons/instagram.svg"
+                    alt=""
+                    width="25"
+                    height="25"
+                    class="me-2"
+                  />Instagram</a
+                >
               </p>
               <p>
-                <a href="#!" class="text-reset">Facebook</a>
+                <a href="#!" class="text-reset"
+                  ><img
+                    src="./node_modules/bootstrap-icons/icons/facebook.svg"
+                    alt=""
+                    width="25"
+                    height="25"
+                    class="me-2"
+                  />Facebook</a
+                >
               </p>
               <p>
-                <a href="#!" class="text-reset">LinkedIn</a>
+                <a href="#!" class="text-reset"
+                  ><img
+                    src="./node_modules/bootstrap-icons/icons/linkedin.svg"
+                    alt=""
+                    width="25"
+                    height="25"
+                    class="me-2"
+                  />LinkedIn</a
+                >
               </p>
             </div>
             <!-- Grid column -->
@@ -453,13 +570,13 @@
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
-                <a href="#!" class="text-reset">About Us</a>
+                <a href="#about" class="text-reset">About Us</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Services</a>
+                <a href="#services" class="text-reset">Services</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Cases</a>
+                <a href="#cases" class="text-reset">Cases</a>
               </p>
               <p>
                 <a href="#!" class="text-reset">Price</a>
